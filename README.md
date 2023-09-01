@@ -4,13 +4,23 @@ Multiple I/O requests may arrive by different processes and only one I/O request
 •	FCFS
 
 •	SSTF
+
 •	SCAN
+
 •	C-SCAN
+
 •	LOOK
+
 •	C-LOOK
+
 # Built with:
+
 HTML
+
 CSS
+
 JAVASCRIPT
+
 jQuery
+
 Bootstrap
