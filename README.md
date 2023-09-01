@@ -17,6 +17,4 @@
   - LOOK
   - C-LOOK
  
-# Link
-Git repo - [Code Link](https://github.com/DharviPatel2805/OS-DiskScheduling/edit/main/disk_scheduling)
 
