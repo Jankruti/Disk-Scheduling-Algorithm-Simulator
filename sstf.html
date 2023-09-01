@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disk Scheduling algorithms - About</title>
+
+    <!-- STYLESHEETS / CSS LINKING -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/bootstrap-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/bootstrap-select.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/site.css" />
+  </head>
+
+  <body style="background-color: #494949">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"
+            >Disk scheduling algorithms</a
+          >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav dropdown">
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Disk Scheduling
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item dropdown" href="fcfs.html">FSFC</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown" href="sstf.html">SSTF</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown" href="scan.html">SCAN</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown" href="cscan.html">C-SCAN</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown" href="look.html">LOOK</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item dropdown" href="clook.html">C-LOOK</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="page-header">
+        <h1><strong> Shortest Seek Time First(SSTF)</strong></h1>
+      </div>
+      <p style="font-size: 20px">
+        FCFS is the simplest disk scheduling algorithm. As the name suggests,
+        this algorithm entertains requests in the order they arrive in the disk
+        queue. The algorithm looks very fair and there is no starvation (all
+        requests are serviced sequentially) but generally, it does not provide
+        the fastest service.
+      </p>
+      <h3><strong> Algorithm:</strong></h3>
+      <ol style="font-size: 18px">
+        <li>
+          Let Request array represents an array storing indexes of tracks that
+          have been requested in ascending order of their time of arrival.
+          ‘head’ is the position of disk head.
+        </li>
+        <li>
+          Let us one by one take the tracks in default order and calculate the
+          absolute distance of the track from the head.
+        </li>
+        <li>Increment the total seek count with this distance.</li>
+        <li>
+          Currently serviced track position now becomes the new head position.
+        </li>
+        <li>
+          Go to step 2 until all tracks in request array have not been serviced.
+        </li>
+      </ol>
+
+      <h3><strong> Advantages of FCFS Disk scheduling Algorithm</strong></h3>
+      <ol style="font-size: 18px">
+        <li>
+            In FCFS disk scheduling, there is no indefinite delay.
+        </li>
+        <li>
+            There is no starvation in FCFS disk scheduling because each request gets a fair chance.
+        </li>
+      </ol>
+
+      <h3><strong> Disadvantages of FCFS Disk scheduling Algorithm</strong></h3>
+      <ol style="font-size: 18px">
+        <li>
+            FCFS scheduling is not offered as the best service.
+        </li>
+        <li>
+            In FCFS, scheduling disk time is not optimized.
+        </li>
+      </ol>
+    </div>
+
+    <!-- SCRIPT LINKING -->
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+  </body>
+</html>

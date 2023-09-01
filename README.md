@@ -1,26 +1,27 @@
-# Disk-Scheduling-Algorithm-Visualization
-Multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by the disk controller. Thus other I/O requests need to wait in the waiting queue and need to be scheduled. The implemented algorithms in this project are FCFS, SSTF, SCAN, C-SCAN, LOOK, and C-LOOK
-# Implemented Disk Algorithms:
-•	FCFS
-
-•	SSTF
-
-•	SCAN
-
-•	C-SCAN
-
-•	LOOK
-
-•	C-LOOK
-
+# Pandit Deendayal Energy University
+# Assignment: Disk Scheduling algorithm visualization
+# Team Members: 
+  - Dharvi Patel(19BIT028)
+  - Brijesh Kavar(19BIT021)
+  - Krishi Godhani(19BIT066)
+  - Ayushi Patel(19BIT017)
+  - Jankruti Brahmbatt(19BIT046)
+ 
 # Built with:
+  - HTML
+  - CSS
+  - JAVASCRIPT
+  - jQuery
+  - Bootstrap
+  
+# Implemented Disk Algorithms:
+  - FCFS
+  - SSTF 
+  - SCAN
+  - C-SCAN
+  - LOOK
+  - C-LOOK
+ 
+# Link
+Git repo - [Code Link](https://github.com/DharviPatel2805/OS-DiskScheduling/edit/main/disk_scheduling)
 
-HTML
-
-CSS
-
-JAVASCRIPT
-
-jQuery
-
-Bootstrap

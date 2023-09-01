@@ -1,0 +1,19 @@
+body {
+    background-color: #333333;
+    background-image: url("https://www.transparenttextures.com/patterns/retro-intro.png");
+}
+
+.animationCls {
+  background-color: #c5c3c3;
+  background-image : url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+.dropdown {
+  /* background-color:rgb(80, 80, 76); */
+  color: rgb(14, 13, 13);
+}
+
+.dropdown:hover {
+  color: rgb(207, 202, 151);
+  background-color: black;
+}
