@@ -1,11 +1,6 @@
 # Pandit Deendayal Energy University
 # Assignment: Disk Scheduling algorithm visualization
-# Team Members: 
-  - Dharvi Patel(19BIT028)
-  - Brijesh Kavar(19BIT021)
-  - Krishi Godhani(19BIT066)
-  - Ayushi Patel(19BIT017)
-  - Jankruti Brahmbatt(19BIT046)
+
  
 # Built with:
   - HTML
